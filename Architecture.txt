@@ -1,0 +1,7 @@
+service will run a simple http service that produces  metrics (on /metrics) and output a prometheus format when hitting the service /metrics url
+For this reason, I thought of using http.server or Flask, Flask being more popular took in this Example
+
+Using
+
+Using 
+https://github.com/prometheus/client_python#custom-collectors
