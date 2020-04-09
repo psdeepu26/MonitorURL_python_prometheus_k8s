@@ -1,5 +1,4 @@
 import time
-import requests
 import sys
 from prometheus_client.core import GaugeMetricFamily, REGISTRY, CounterMetricFamily
 from prometheus_client import start_http_server

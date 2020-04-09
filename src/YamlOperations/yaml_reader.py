@@ -1,8 +1,8 @@
 import yaml
 import os
 
-def readConfig():
-    filename = "config/endpoints.yaml"
+def readConfig(filename = "config/endpoints.yaml"):
+    #filename = "config/endpoints.yaml"
     file_details = {}
 
     if os.path.exists(filename) and os.access(filename, os.R_OK):

@@ -1,0 +1,8 @@
+.Python
+include/*
+lib/*
+bin/*
+.gitignore
+*__pycache__*
+*.pyc
+*.DS_Store
