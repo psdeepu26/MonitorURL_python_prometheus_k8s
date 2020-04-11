@@ -52,5 +52,8 @@ python3 -m unittest tests.unitTests2
 ### How to Run using Docker
 <img src='docs/docker_run.gif' title='Running App using Docker' width='' alt='Running App using Docker' />
 
+### How to Run using Kubernetes
+<img src='docs/k8s_run.gif' title='Running App using Kubernetes' width='' alt='Running App using Kubernetes' />
+
 ### Authors
 Santhosh Deepu Patrayuni
