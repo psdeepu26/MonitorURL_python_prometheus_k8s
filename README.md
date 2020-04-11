@@ -3,17 +3,17 @@ Using this script we will be able to MonitorURLs and export the metrics to Prome
 
 
 - [Setup](#Setup)
-    - [Softwares Used](#softwares-used)
-    - [Prerequisites](#prerequisites)
-    - [For Mac Users](#for-mac-users)
+    - [Dev](#Dev)
+    - [Test](#Test)
+    - [Project Structure] (#Project-Structure)
 - [How to Use](#how-to-use)
-    - 1. [Check Current Status](#check-current-status)  
-    - 2. [Failover or Disable a Region](#failover-or-disable-a-region)  
-    - 3. [Failback or Enable a Region](#failback-or-enable-a-region)
+    - 1. [Locally](#Locally)  
+    - 2. [Using Docker](#Using-Docker)  
+    - 3. [Using Kubernetes](#Using-Kubernetes)
 
 
 ## Setup
-### Dev
+#### Dev
 Setup your virutal env:
 
 ```shell
@@ -22,7 +22,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### Test
+#### Test
 
 ```
 pip3 install -r requirements.txt
@@ -30,7 +30,7 @@ python3 -m unittest tests.unitTests1
 python3 -m unittest tests.unitTests2
 ```
 
-## Project Structure
+#### Project Structure
 
         .
         ├── Architecture.txt
@@ -49,24 +49,7 @@ python3 -m unittest tests.unitTests2
         ├── unitTests1.py
         └── unitTests2.py
 
-### How to Use
+## How to Use
 
-# Dev
-Setup your virutal env:
-
-```shell
-virtualenv -p python3 venv
-source venv/bin/activate
-pip install -r requirements.txt
-```
-
-## Test
-
-```
-pip3 install -r requirements.txt
-python3 -m unittest tests.unitTests1
-python3 -m unittest tests.unitTests2
-```
-
-## Authors
+### Authors
 Santhosh Deepu Patrayuni
