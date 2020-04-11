@@ -20,6 +20,7 @@ A Simple HTTP Service Application which monitors a set of URLs/Endpoints and out
     - 1. [Run Locally](#Run-Locally)  
     - 2. [Run using Docker](#Run-using-Docker)  
     - 3. [Run using Kubernetes](#Run-using-Kubernetes)
+- [Unit Tests](#Unit-Tests)
 
 
 ## Setup
@@ -80,10 +81,6 @@ python3 -m unittest tests.unitTests2
 <img src='docs/k8s_run.gif' title='Running App using Kubernetes' width='' alt='Running App using Kubernetes' />
 
 ## Unit Tests
-To run the unit tests exexute the below command
-
-Note: Please install unittest package if not available by default
-
 ```bash
  python -m unittest tests/unitTest_main.py
  python -m unittest tests/unitTest_helpers.py
