@@ -11,7 +11,7 @@ A Simple HTTP Service Application which monitors a set of URLs/Endpoints and out
   * Unit Tests to test each module
 
 
-## Table of Contents
+## Contents
 - [Setup](#Setup)
     - [Dev](#Dev)
     - [Test](#Test)
