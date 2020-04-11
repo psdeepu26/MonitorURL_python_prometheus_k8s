@@ -1,0 +1,54 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  name: monitorurls-app
+  namespace: app
+spec:
+  type: NodePort
+  ports:
+  - port: 8000
+    protocol: TCP
+    targetPort: 8000
+    nodePort: 31000
+  selector:
+    run: monitorurls-app
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    run: monitorurls-app
+  name: monitorurls-app
+  namespace: app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: monitorurls-app
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        run: monitorurls-app
+    spec:
+      containers:
+      - image: spatrayuni/monitorurls
+        name: monitorurls-app
+        ports:
+        - containerPort: 8000
+        readinessProbe:
+          tcpSocket:
+            port: 8000
+          initialDelaySeconds: 5
+        livenessProbe:
+          exec:
+            command:
+            - curl
+            - http://localhost:8000/metrics
+          initialDelaySeconds: 10
+          periodSeconds: 3
+        resources: {}
+status: {}

@@ -1,7 +1,15 @@
 import yaml
 import os
 
-def readConfig(filename = "config/endpoints.yaml"):
+current_path = os.getcwd()
+if 'src' in current_path:
+    file_name = current_path + "/config/endpoints.yaml"
+elif 'tests' in current_path:
+    file_name = current_path + "/config/endpoints.yaml"
+else:
+    file_name = current_path + "/src/config/endpoints.yaml"
+
+def readConfig(filename = file_name):
     #filename = "config/endpoints.yaml"
     file_details = {}
 

@@ -7,6 +7,7 @@ from pathlib import Path
 
 from src.monitorURLs import monitorURL
 from src.YamlOperations import yaml_reader
+from src import main as source_code
 
 class Test_YamlOperations(unittest.TestCase):
     def test_yaml_exists(self):
@@ -41,6 +42,12 @@ class Test_MonitorURL(unittest.TestCase):
         self.assertEqual(http_response, 0)
         print("------------------------ Test Case : Completed ------------------\n")
 
+class Test_MainProgram(unittest.TestCase):
+    def test_method_api_response ( self ) :
+        print("------------------------ Test Case : Failure Test ------------------")
+        warnings.filterwarnings(action="ignore", message="unclosed", category=ResourceWarning)
+        source_code.REGISTRY.register(source_code.CustomCollector())
+        print( "Test 6" )
 
 if __name__ == '__main__':
     unittest.main()

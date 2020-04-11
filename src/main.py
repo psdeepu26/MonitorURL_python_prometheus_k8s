@@ -1,10 +1,9 @@
 import time
 import sys
 from prometheus_client.core import GaugeMetricFamily, REGISTRY, CounterMetricFamily
-from prometheus_client import start_http_server
+from prometheus_client import start_http_server, Counter
 
-from monitorURLs import monitorURL
-from YamlOperations import yaml_reader
+c = Counter('num_requests', 'The number of requests.')
 
 class CustomCollector(object):
     def collect(self):
@@ -28,9 +27,11 @@ class CustomCollector(object):
 
 
 if __name__ == '__main__':
+    from monitorURLs import monitorURL
+    from YamlOperations import yaml_reader
     try :
         start_http_server(8000)
-        print("Site is up now at http://<ipaddress>:8080")
+        print("Site is up now at http://<ipaddress>:8000")
         REGISTRY.register(CustomCollector())
         while True:
             time.sleep(1)
@@ -46,3 +47,6 @@ if __name__ == '__main__':
         print('\033[1m' + '\nExiting !!!!\n')
         print('\033[0m')
         sys.exit()
+else:
+    from .monitorURLs import monitorURL
+    from .YamlOperations import yaml_reader
