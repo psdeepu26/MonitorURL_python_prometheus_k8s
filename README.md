@@ -49,5 +49,8 @@ python3 -m unittest tests.unitTests2
 ### How to Run Locally
 <img src='docs/run_locally.gif' title='Running Locally' width='' alt='Running Locally' />
 
+### How to Run using Docker
+<img src='docs/docker_run.gif' title='Running App using Docker' width='' alt='Running App using Docker' />
+
 ### Authors
 Santhosh Deepu Patrayuni
