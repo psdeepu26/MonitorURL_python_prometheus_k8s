@@ -6,8 +6,10 @@ if 'src' in current_path:
     file_name = current_path + "/config/endpoints.yaml"
 elif 'tests' in current_path:
     file_name = current_path + "/config/endpoints.yaml"
-else:
+elif 'app' in current_path:
     file_name = "config/endpoints.yaml"
+else:
+    file_name = "src/config/endpoints.yaml"
 
 def readConfig(filename = file_name):
     #filename = "config/endpoints.yaml"
