@@ -1,7 +1,5 @@
 import unittest
 import os
-import sys
-import requests
 import warnings
 from pathlib import Path
 

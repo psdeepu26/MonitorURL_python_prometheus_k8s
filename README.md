@@ -1,17 +1,15 @@
 # MonitorURLs
 A Simple HTTP Service Application which monitors a set of URLs/Endpoints and outputs a Prometheus format metrics for consumption
 
-###Functional Requirement:
+### Functional Requirements:
 * Using this script we will be able to MonitorURLs and export the metrics to Prometheus
 * A Service which monitors URLs like (https://httpstat.us/503 & https://httpstat.us/200)
   * Service should query and get HTTP Status Code and Response Time in milliseconds
   * Service should run a Simple HTTP Service that produces metrics (/metrics) output to a Prometheus format for consumption
-###Functional Requirement:
-* CICD Setup
+### Non-Functional Requirements:
   * Dockerfile to build image
   * Kubernetes files to Deploy the Application and expose it as a Service
   * Unit Tests to test each module
-
 
 - [Setup](#Setup)
     - [Dev](#Dev)

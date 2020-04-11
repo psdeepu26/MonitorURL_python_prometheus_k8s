@@ -1,7 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  creationTimestamp: null
   labels:
     run: monitorurls-app
   name: monitorurls-app
@@ -11,10 +10,8 @@ spec:
   selector:
     matchLabels:
       run: monitorurls-app
-  strategy: {}
   template:
     metadata:
-      creationTimestamp: null
       labels:
         run: monitorurls-app
     spec:
@@ -34,5 +31,3 @@ spec:
             - http://localhost:8000/metrics
           initialDelaySeconds: 10
           periodSeconds: 3
-        resources: {}
-status: {}
