@@ -1,6 +1,5 @@
 # MonitorURLs
 A Simple HTTP Service Application which monitors a set of URLs/Endpoints and outputs a Prometheus format metrics for consumption
-
 ##### Functional Requirements:
 * Using this script we will be able to MonitorURLs and export the metrics to Prometheus
 * A Service which monitors URLs like (https://httpstat.us/503 & https://httpstat.us/200)
@@ -12,6 +11,7 @@ A Simple HTTP Service Application which monitors a set of URLs/Endpoints and out
   * Unit Tests to test each module
 
 
+## Table of Contents
 - [Setup](#Setup)
     - [Dev](#Dev)
     - [Test](#Test)
