@@ -28,23 +28,37 @@ python3 -m unittest tests.unitTests2
 ```
 
 #### Project Structure
-        .
-        ├── Architecture.txt
-        ├── Dockerfile
-        ├── prometheus.yaml
-        ├── requirements.txt
-        ├── src
-        │   ├── YamlOperations
-        │   │   └── yaml_reader.py
-        │   ├── config
-        │   │   └── endpoints.yaml
-        │   ├── main.py
-        │   └── monitorURLs
-        │       └── monitorURL.py
-        └── tests
-        ├── unitTests1.py
-        └── unitTests2.py
-
+      .
+      ├── Architecture.txt
+      ├── Dockerfile
+      ├── README.md
+      ├── docs
+      │   ├── docker_run.gif
+      │   ├── k8s_run.gif
+      │   └── run_locally.gif
+      ├── k8s_src
+      │   ├── app_namespace.yaml
+      │   ├── monitorurls-app.yaml
+      │   └── monitorurls-service.yaml
+      ├── prometheus.yaml
+      ├── requirements.txt
+      ├── src
+      │   ├── YamlOperations
+      │   │   ├── __init__.py
+      │   │   └── yaml_reader.py
+      │   ├── __init__.py
+      │   ├── config
+      │   │   └── endpoints.yaml
+      │   ├── main.py
+      │   └── monitorURLs
+      │       ├── __init__.py
+      │       └── monitorURL.py
+      └── tests
+          ├── __init__.py
+          ├── unitTests1.py
+          ├── unitTests2.py
+          └── unitTests3.py
+        
 ## How to Use
 ### How to Run Locally
 <img src='docs/run_locally.gif' title='Running Locally' width='' alt='Running Locally' />
