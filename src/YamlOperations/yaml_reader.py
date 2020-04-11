@@ -5,7 +5,7 @@ current_path = os.getcwd()
 if 'src' in current_path:
     file_name = current_path + "/config/endpoints.yaml"
 elif 'tests' in current_path:
-    file_name = current_path + "/config/endpoints.yaml"
+    file_name = os.path.normpath(os.getcwd() + os.sep + os.pardir) + "/src/config/endpoints.yaml"
 elif 'app' in current_path:
     file_name = "config/endpoints.yaml"
 else:
