@@ -1,9 +1,7 @@
 import time
 import sys
 from prometheus_client.core import GaugeMetricFamily, REGISTRY, CounterMetricFamily
-from prometheus_client import start_http_server, Counter
-
-c = Counter('num_requests', 'The number of requests.')
+from prometheus_client import start_http_server
 
 class CustomCollector(object):
     def collect(self):
