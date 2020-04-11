@@ -11,14 +11,15 @@ A Simple HTTP Service Application which monitors a set of URLs/Endpoints and out
   * Kubernetes files to Deploy the Application and expose it as a Service
   * Unit Tests to test each module
 
+
 - [Setup](#Setup)
     - [Dev](#Dev)
     - [Test](#Test)
     - [Project Structure](#Project-Structure)
 - [How to Use](#how-to-use)
-    - 1. [Locally](#Locally)  
-    - 2. [Using Docker](#Using-Docker)  
-    - 3. [Using Kubernetes](#Using-Kubernetes)
+    - 1. [Run Locally](#Run-Locally)  
+    - 2. [Run using Docker](#Run-using-Docker)  
+    - 3. [Run using Kubernetes](#Run-using-Kubernetes)
 
 
 ## Setup
@@ -69,14 +70,24 @@ python3 -m unittest tests.unitTests2
           └── unitTests3.py
 
 ## How to Use
-### How to Run Locally
+### Run Locally
 <img src='docs/run_locally.gif' title='Running Locally' width='' alt='Running Locally' />
 
-### How to Run using Docker
+### Run using Docker
 <img src='docs/docker_run.gif' title='Running App using Docker' width='' alt='Running App using Docker' />
 
-### How to Run using Kubernetes
+### Run using Kubernetes
 <img src='docs/k8s_run.gif' title='Running App using Kubernetes' width='' alt='Running App using Kubernetes' />
 
-### Authors
+## Unit Tests
+To run the unit tests exexute the below command
+
+Note: Please install unittest package if not available by default
+
+```bash
+ python -m unittest tests/unitTest_main.py
+ python -m unittest tests/unitTest_helpers.py
+```
+
+### Author
 Santhosh Deepu Patrayuni
