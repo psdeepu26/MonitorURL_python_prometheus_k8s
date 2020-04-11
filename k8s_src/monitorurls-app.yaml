@@ -1,4 +1,12 @@
 apiVersion: v1
+kind: Namespace
+metadata:
+  creationTimestamp: null
+  name: app
+spec: {}
+status: {}
+---
+apiVersion: v1
 kind: Service
 metadata:
   creationTimestamp: null
