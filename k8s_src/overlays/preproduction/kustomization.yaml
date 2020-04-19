@@ -1,0 +1,12 @@
+namePrefix: preprod-
+
+namespace: preprod-app
+
+commonLabels:
+  env: preproduction
+
+bases:
+- ../../base
+
+patchesStrategicMerge:
+- monitorurls-service-patch.yaml

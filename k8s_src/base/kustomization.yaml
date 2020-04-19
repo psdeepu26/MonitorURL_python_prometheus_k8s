@@ -1,0 +1,7 @@
+commonLabels:
+  app: monitorurls
+
+resources:
+  - app_namespace.yaml
+  - monitorurls-app-deploy.yaml
+  - monitorurls-service.yaml

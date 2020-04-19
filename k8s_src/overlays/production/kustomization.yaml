@@ -1,0 +1,13 @@
+namePrefix: prod-
+
+namespace: prod-app
+
+commonLabels:
+  env: prod
+
+bases:
+- ../../base
+
+patchesStrategicMerge:
+- monitorurls-service-patch.yaml
+- replicas-count.yaml
